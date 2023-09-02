@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-
-    <title>JSON Form App</title>
-  </head>
-  <body>
-    <nav class="navbar">Exactspace-Assignment</nav>
-    <div class="container">
-      <div class="box input-box">
-        <h1>Input JSON</h1>
-        <form id="jsonForm">
-          <textarea
-            id="jsonData"
-            rows="10"
-            placeholder="Enter JSON data"
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Exact Space Assignment</title>
+</head>
+<body>
+  <header class="navbar">
+    <h1>Exact Space Assignment</h1>
+  </header>
+  <main class="container">
+    <section class="box input-box">
+      <h2>Input JSON Data</h2>
+      <form id="jsonForm">
+        <textarea
+          id="jsonData"
+          rows="10"
+          placeholder="Enter JSON data"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="box output-box">
+      <h2>Output JSON Data</h2>
+      <div id="result" class="result hidden">
+        <div id="responseContainer"></div>
       </div>
-      <div class="box output-box">
-        <h1>Output JSON</h1>
-        <div id="result" class="result hidden">
-          <div id="responseContainer"></div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Custom JSON Form App</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
 </html>
